@@ -14,7 +14,7 @@ module.exports = Ferdi => {
     //   indirectCount = Ferdi.safeParseInt(badges[1].textContent);
     // }
 
-    badges.forEach(badge => indirectCount = Ferdi.safeParseInt(badge.textContent);;
+    badges.forEach(badge => indirectCount = indirectCount + Ferdi.safeParseInt(badge.textContent);;
 
     // set Ferdi badge
     Ferdi.setBadge(directCount, indirectCount);
